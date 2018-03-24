@@ -1,0 +1,28 @@
+:root{
+	--width-percentage:60%;
+}
+
+body {
+    background-color: #c2c2d6;
+
+}
+
+#input{
+	display: block;
+	width: var(--width-percentage);
+	height: 200px;
+	padding: 15px;
+
+	resize: none;
+	outline: none;
+
+	margin-top: 15px;
+	margin-bottom: 15px;
+    m
+
+}
+
+#output {
+	width: var(--width-percentage);
+	text-align: left;
+}

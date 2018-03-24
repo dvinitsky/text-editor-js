@@ -1,0 +1,44 @@
+<!-- 
+TODO:
+-Height of textarea box should automatically size to screen
+-Change output text font to match input font
+-Ability to change font size, font and color
+-Spellcheck with Sam
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="index.css">
+	  <script src="index.js"></script>
+</head>
+<body>
+
+<center>
+<header>
+	<h1>Start typing your text here:</h1>
+</header>
+
+<button type="button" onclick="addTagsBold()">
+Bold
+</button>
+<button type="button" onclick="addTagsItalics()">
+Italics
+</button>
+<button type="button" onclick="addTagsUnderline()">
+Underline
+</button>
+<button type="button" onclick="addTagsStrike()">
+Strikethrough
+</button>
+
+<textarea id="input" spellcheck="false" autocomplete="false" autcocorrect="false" autocapitalize="false" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;} formatText()">
+</textarea>
+
+<div id="output">
+</div>
+</center>
+
+
+</body>
+</html>
